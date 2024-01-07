@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;  background-color: #f0f0f0;
+  }
+  
+  #chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 560px;
+    height: 560px;
+    border: 1px solid #ccc;
+  }
+  
+  .cell {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .cell:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .cell:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .white {
+    background-image: url('pieces/w_rook.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .black {
+    background-image: url('pieces/b_rook.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .selected {
+    background-color: #e5e5e5;
+  }
+
+  #chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 320px;
+    height: 320px;
+  }
+  
+  .cell {
+    background-color: #ccc;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .white .cell:nth-child(even) {
+    background-color: #fff;
+  }
+  
+  .black .cell:nth-child(odd) {
+    background-color: #000;
+  }
